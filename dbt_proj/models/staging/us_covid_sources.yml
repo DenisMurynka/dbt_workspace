@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: tpch
+    database: DB_CL_DEV
+    schema: DBT_PROJ
+    tables:
+      - name: US_COVID19_DAILY
+        columns:
+          - name: DATE
+            tests:
+              - not_null
